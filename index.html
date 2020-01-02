@@ -4,55 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Accessible Menu</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__item__link" href="#">Home</a>
           </li>
-          <li>
-            <a href="#">Sub Menu</a>
-            <ul>
-              <li>
-                <a href="#">Sub Link</a>
+          <li class="menu__item">
+            <a class="menu__item__link" href="#">Sub Menu</a>
+            <ul class="menu__item__dropdown">
+              <li class="menu__item__dropdown__item">
+                <a class="menu__item__dropdown__item__link" href="#">Sub Link</a>
               </li>
-              <li>
-                <a href="#">Sub Link</a>
+              <li class="menu__item__dropdown__item">
+                <a class="menu__item__dropdown__item__link" href="#">Sub Link</a>
               </li>
-              <li>
-                <a href="#">Sub Link</a>
+              <li class="menu__item__dropdown__item">
+                <a class="menu__item__dropdown__item__link" href="#">Sub Link</a>
               </li>
             </ul>
           </li>
-          <li>
-            <a href="#">Sub Menu</a>
-            <ul>
-              <li>
-                <a href="#">Sub Link</a>
-                <ul>
-                  <li>
-                    <a href="#">Deep Link</a>
+          <li class="menu__item">
+            <a class="menu__item__link" href="#">Sub Menu</a>
+            <ul class="menu__item__dropdown">
+              <li class="menu__item__dropdown__item">
+                <a class="menu__item__dropdown__item__link" href="#">Sub Link</a>
+                <ul class="menu__item__dropdown__item__sub-dropdown">
+                  <li class="menu__item__dropdown__item__sub-dropdown__item">
+                    <a class="menu__item__dropdown__item__sub-dropdown__item__link" href="#">Deep Link</a>
                   </li>
-                  <li>
-                    <a href="#">Deep Link</a>
+                  <li class="menu__item__dropdown__item__sub-dropdown__item">
+                    <a class="menu__item__dropdown__item__sub-dropdown__item__link" href="#">Deep Link</a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <a href="#">Sub Link</a>
+              <li class="menu__item__dropdown__item">
+                <a class="menu__item__dropdown__item__link" href="#">Sub Link</a>
               </li>
-              <li>
-                <a href="#">Sub Link</a>
+              <li class="menu__item__dropdown__item">
+                <a class="menu__item__dropdown__item__link" href="#">Sub Link</a>
               </li>
             </ul>
           </li>
-          <li>
-            <a href="#">Contact</a>
+          <li class="menu__item">
+            <a class="menu__item__link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
