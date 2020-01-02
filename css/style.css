@@ -1,0 +1,18 @@
+.menu {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #300000;
+  padding: 20px;
+}
+.menu,
+.menu__item__dropdown,
+.menu__item__dropdown__item__sub-dropdown {
+  list-style: none;
+}
+.menu__item__link,
+.menu__item__dropdown__item__link,
+.menu__item__dropdown__item__sub-dropdown__item__link {
+  text-decoration: none;
+  color: #ffffff;
+}
