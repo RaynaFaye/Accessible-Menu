@@ -6,13 +6,13 @@
   padding: 20px;
 }
 .menu,
-.menu__item__dropdown,
-.menu__item__dropdown__item__sub-dropdown {
+.menu__dropdown,
+.menu__dropdown__sub-dropdown {
   list-style: none;
 }
-.menu__item__link,
-.menu__item__dropdown__item__link,
-.menu__item__dropdown__item__sub-dropdown__item__link {
+.menu__link,
+.menu__dropdown__link,
+.menu__dropdown__sub-dropdown__link {
   text-decoration: none;
   color: #ffffff;
 }
