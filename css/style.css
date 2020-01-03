@@ -1,9 +1,14 @@
+body {
+  margin: 0px;
+}
+/* Main menu styles */
 .menu {
   font-size: 20px;
+  padding: 20px;
+  margin-top: 0px;
+  background-color: #300000;
   display: flex;
   justify-content: space-around;
-  background-color: #300000;
-  padding: 20px;
 }
 .menu,
 .menu__dropdown,
@@ -15,4 +20,35 @@
 .menu__dropdown__sub-dropdown__link {
   text-decoration: none;
   color: #ffffff;
+}
+.menu__item,
+.menu__dropdown__item,
+.menu__dropdown__sub-dropdown__item {
+  padding: 10px;
+}
+
+/* First dropdown level */
+.menu__item {
+  position: relative;
+}
+.menu__dropdown {
+  display: none;
+  background-color: #520000; /* different color just to see where it is for the time being */
+  width: 100%;
+  padding: 20px 0px 0px 0px;
+  position: absolute;
+  left: 0;
+}
+.menu__item:hover .menu__dropdown,
+.menu__item .menu__dropdown:hover {
+  display: block;
+}
+/* :focus-within allows to give the focus inside the dropdown using css only. Must be seperate from the previous css styles using hover or breaks the css  */
+.menu__item:focus-within .menu__dropdown {
+  display: block;
+}
+
+/* Second dropdown level */
+.menu__dropdown__sub-dropdown {
+  display: none;
 }
