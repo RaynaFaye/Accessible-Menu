@@ -49,6 +49,23 @@ body {
 }
 
 /* Second dropdown level */
+.menu__dropdown__item {
+  position: relative;
+}
 .menu__dropdown__sub-dropdown {
   display: none;
+  background-color: #800000; /* different color just to see where it is for the time being */
+  width: 100%;
+  white-space: nowrap;
+  padding: 0px 20px;
+  position: absolute;
+  left: 100%;
+  top: 0px;
+}
+.menu__dropdown__item:hover .menu__dropdown__sub-dropdown,
+.menu__dropdown__item .menu__dropdown__sub-dropdown:hover {
+  display: block;
+}
+.menu__dropdown__item:focus-within .menu__dropdown__sub-dropdown {
+  display: block;
 }
