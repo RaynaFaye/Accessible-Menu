@@ -46,7 +46,8 @@ body {
 }
 /* :focus-within allows to give the focus inside the dropdown using css only. Must be seperate from the css styles using hover or breaks the css  */
 .menu__item:hover .menu__dropdown,
-.menu__item .menu__dropdown:hover {
+.menu__item .menu__dropdown:hover,
+.menu__dropdown--reveal {
   display: block;
 }
 .menu__item:focus-within .menu__dropdown {
