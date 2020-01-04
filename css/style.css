@@ -15,45 +15,49 @@ body {
 .menu__sub-dropdown {
   list-style: none;
 }
-.menu__link {
-  text-decoration: none;
-  color: #ffffff;
-}
 .menu__item {
   padding: 10px;
-}
-
-/* First dropdown level */
-.menu__item {
+  margin: 10px 0px;
   position: relative;
 }
-.menu__dropdown {
+.menu__link {
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+.menu__link:hover,
+.menu__link:focus {
+  background-color: #ffffff;
+  color: #000000;
+  outline: red dotted 2px;
+}
+/* First dropdown level */
+.menu__dropdown,
+.menu__sub-dropdown {
   display: none;
-  background-color: #520000; /* different color just to see where it is for the time being */
+  background-color: #300000;
   width: 100%;
-  padding: 20px 0px 0px 0px;
   position: absolute;
+}
+.menu__dropdown {
+  padding: 0px 20px 0px 0px;
+  top: 45px;
   left: 0;
 }
+/* :focus-within allows to give the focus inside the dropdown using css only. Must be seperate from the css styles using hover or breaks the css  */
 .menu__item:hover .menu__dropdown,
 .menu__item .menu__dropdown:hover {
   display: block;
 }
-/* :focus-within allows to give the focus inside the dropdown using css only. Must be seperate from the previous css styles using hover or breaks the css  */
 .menu__item:focus-within .menu__dropdown {
   display: block;
 }
-
 /* Second dropdown level */
 .menu__sub-dropdown {
-  display: none;
-  background-color: #800000; /* different color just to see where it is for the time being */
-  width: 100%;
   white-space: nowrap;
   padding: 0px 20px;
-  position: absolute;
-  left: 100%;
   top: 0px;
+  left: 100%;
 }
 .menu__dropdown__item:hover .menu__sub-dropdown,
 .menu__dropdown__item .menu__sub-dropdown:hover {
