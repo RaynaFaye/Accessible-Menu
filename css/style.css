@@ -12,18 +12,14 @@ body {
 }
 .menu,
 .menu__dropdown,
-.menu__dropdown__sub-dropdown {
+.menu__sub-dropdown {
   list-style: none;
 }
-.menu__link,
-.menu__dropdown__link,
-.menu__dropdown__sub-dropdown__link {
+.menu__link {
   text-decoration: none;
   color: #ffffff;
 }
-.menu__item,
-.menu__dropdown__item,
-.menu__dropdown__sub-dropdown__item {
+.menu__item {
   padding: 10px;
 }
 
@@ -49,10 +45,7 @@ body {
 }
 
 /* Second dropdown level */
-.menu__dropdown__item {
-  position: relative;
-}
-.menu__dropdown__sub-dropdown {
+.menu__sub-dropdown {
   display: none;
   background-color: #800000; /* different color just to see where it is for the time being */
   width: 100%;
@@ -62,10 +55,10 @@ body {
   left: 100%;
   top: 0px;
 }
-.menu__dropdown__item:hover .menu__dropdown__sub-dropdown,
-.menu__dropdown__item .menu__dropdown__sub-dropdown:hover {
+.menu__dropdown__item:hover .menu__sub-dropdown,
+.menu__dropdown__item .menu__sub-dropdown:hover {
   display: block;
 }
-.menu__dropdown__item:focus-within .menu__dropdown__sub-dropdown {
+.menu__dropdown__item:focus-within .menu__sub-dropdown {
   display: block;
 }
